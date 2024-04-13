@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; 
+  color: #333;
+}
+
+header {
+  background-image: linear-gradient(to right, #448AFF, #363795);
+}
+
+.nav-container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 1.6rem;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-text {
+  font-size: 3.2rem; 
+  color: white;
+  font-family: 'Montserrat', sans-serif; 
+}
+
+.nav-items ul {
+  display: flex;
+  font-size: 1.6rem; 
+  font-family: 'Roboto', sans-serif; 
+}
+
+.nav-items ul li {
+  list-style: none;
+  padding: 1rem 2rem;
+}
+
+.nav-items ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+button {
+  border: none;
+  background-color: white;
+  font-size: 1.6rem;
+  padding: 1rem;
+  color: white;
+}
+
+.contact-sales-button {
+  margin-right: 0.8rem;
+  border: none;
+  background-color: inherit;
+}
+
+.sign-in-button {
+  color: #333;
+  border-radius: 2rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  mix-blend-mode: screen;
+  opacity: 0.98;
+  cursor: pointer;
+}
+
+.sign-in-button:hover {
+  animation: grow 0.3s ease;
+
+  @keyframes grow {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+}
